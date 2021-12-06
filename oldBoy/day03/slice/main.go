@@ -31,5 +31,6 @@ func main() {
 	s3 := a1[0:2]
 	fmt.Println(s3)
 	fmt.Printf("len:%d cap:%d\n", len(s3), cap(s3))
+	
 
 }
