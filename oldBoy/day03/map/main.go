@@ -20,4 +20,22 @@ func main() {
 	} else {
 		fmt.Println(v)
 	}
+
+	// 遍历
+
+	for k, v := range m1 {
+		fmt.Println(k, v)
+	}
+	// 只遍历 key
+	for k := range m1 {
+		fmt.Println(k)
+	}
+	// 只遍历 value
+	for _, v := range m1 {
+		fmt.Println(v)
+	}
+	// 删除
+	delete(m1, "理想")
+	fmt.Println(m1)
+
 }
