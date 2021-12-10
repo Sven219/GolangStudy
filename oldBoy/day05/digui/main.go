@@ -27,5 +27,5 @@ func taijie(n uint64) uint64 {
 func main() {
 	fmt.Println(fact(10))
 
-	fmt.Println(taijie(3))
+	fmt.Println(taijie(10))
 }
