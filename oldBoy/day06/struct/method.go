@@ -15,7 +15,7 @@ func newDog(name string) dog {
 
 // 方法是作用于特定类型的函数
 func (d dog) wang() {
-	fmt.Println("旺旺旺~")
+	fmt.Println("%s:旺旺旺~", d.name)
 }
 
 func main() {
