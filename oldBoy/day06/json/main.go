@@ -25,4 +25,10 @@ func main() {
 	}
 	fmt.Printf("string(b): %v\n", string(b)) // string(b): {"姓名":"张三","年龄":10}
 
+	// 反序列化
+	str := "{\"姓名\":\"张三\",\"年龄\":10}"
+	var p2 person
+	json.Unmarshal([]byte(str), &p2)
+	fmt.Printf("p2: %v\n", p2)
+
 }
