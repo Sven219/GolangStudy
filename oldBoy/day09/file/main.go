@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"os"
 )
 
@@ -52,12 +53,23 @@ func readFromFilebyBufio() {
 			fmt.Printf("%v", err)
 			return
 		}
-		fmt.Println(line)
+		fmt.Print(line)
 	}
+}
+
+// ioutil 读
+func readFromFilebyIoutil() {
+	ret, err := ioutil.ReadFile("./main.go")
+	if err != nil {
+		fmt.Printf("%v", err)
+		return
+	}
+	fmt.Println(string(ret))
 }
 
 // 打开文件
 func main() {
-	readFromFilebyBufio()
+	// readFromFilebyBufio()
+	readFromFilebyIoutil()
 
 }
