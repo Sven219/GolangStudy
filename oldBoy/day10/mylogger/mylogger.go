@@ -43,6 +43,7 @@ func parseLogLevel(s string) (LogLevel, error) {
 		return UNKNOWN, err
 	}
 }
+
 func getLogString(lv LogLevel) string {
 	switch lv {
 	case DEBUG:
@@ -55,6 +56,8 @@ func getLogString(lv LogLevel) string {
 		return "ERROR"
 	case FATAL:
 		return "FATAL"
+	case WARNING:
+		return "WARNING"
 	default:
 		return "UNKNOWN"
 	}
