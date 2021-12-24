@@ -15,7 +15,7 @@ func main() {
 		id := 100
 		name := "张三"
 		log.Error("这是一条 Error 日志，id:%d ,name:%s", id, name)
-		log.Warning("这是一条 warning 日志")
+		log.Warning("这是一条 warning  日志")
 		log.Fatal("这是一条 Fatal 日志")
 		time.Sleep(time.Second)
 	}
