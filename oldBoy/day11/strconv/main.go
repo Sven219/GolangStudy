@@ -20,5 +20,15 @@ func main() {
 		return
 	}
 	fmt.Printf("%#v,%T\n", ret3, ret3)
+	// 字符串转换成整型
+	retInt, _ := strconv.Atoi(str)
+	fmt.Printf("%#v,%T\n", retInt, retInt)
+	i2 := 97
+	ret4 := strconv.Itoa(i2)
+	fmt.Printf("%#v,%T\n", ret4, ret4)
+	// 从字符串中解析出布尔值
+	boolStr := "true"
+	boolValue, _ := strconv.ParseBool(boolStr)
+	fmt.Printf("%#v,%T\n", boolValue, boolValue)
 
 }
