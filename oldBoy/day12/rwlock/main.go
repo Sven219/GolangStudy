@@ -34,7 +34,7 @@ func write() {
 func main() {
 	start := time.Now()
 	for i := 0; i < 10; i++ {
-		go write()123
+		go write()
 
 		wg.Add(1)
 	}
