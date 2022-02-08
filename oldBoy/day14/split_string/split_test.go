@@ -13,3 +13,9 @@ func TestSplit(t *testing.T) {
 		t.Errorf("want:%v but got:%v\n", want, ret)
 	}
 }
+
+func BenchmarkSplit(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Split("a:b:c", ":")
+	}
+}
